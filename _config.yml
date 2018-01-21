@@ -1,0 +1,6 @@
+
+title: Blog da inSite
+description: Conteúdo para empreendedores
+url: "insitedf.com" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: ':title/'
+baseurl: "/blog" # the subpath of your site, e.g. /blog
