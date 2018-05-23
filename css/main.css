@@ -699,13 +699,13 @@ footer .row{max-width:980px;}
 }
 
 a {
-  color: #949090;
+  color: green;
   text-decoration: none;
   -webkit-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
 a:hover {
-  color: #615b5b;
+  color: rgb(0, 216, 0);
 }
 
 .highlight {
