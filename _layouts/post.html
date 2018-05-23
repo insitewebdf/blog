@@ -61,5 +61,7 @@ layout: default
 
 
     </section> <!-- end s-home -->
-
+    {% if post.img %}
+    <a href="{{post.url | prepend: site.baseurl}}"><img class="post-image" src={{ "../images/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}"></a>
+ {% endif %}
 {{content}}
