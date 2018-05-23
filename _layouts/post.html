@@ -22,12 +22,6 @@ layout: default
                    {{page.title}}
                 </h1>
 
-                <div class="home-content__buttons">
-                    <a href="#contact" class="smoothscroll btn btn--stroke">
-                        Ler post
-                    </a>
-                   
-                </div>
 
             </div>
 
@@ -61,7 +55,9 @@ layout: default
 
 
     </section> <!-- end s-home -->
-    {% if post.img %}
-    <a href="{{post.url | prepend: site.baseurl}}"><img class="post-image" src={{ "../images/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}"></a>
- {% endif %}
+   <section id="post">
+        {% if post.img %}
+        <a href="{{post.url | prepend: site.baseurl}}"><img class="post-image" src={{ "/images/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}"></a>
+     {% endif %}
 {{content}}
+</section>
