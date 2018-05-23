@@ -7,7 +7,7 @@ layout: default
 {% include header.html %}
   <!-- home
     ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="http://insitedf.com/images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="{{ "/images/" | prepend: site.baseurl | append: page.img }}" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
         <div class="overlay"></div>
         <div class="shadow-overlay"></div>
@@ -56,8 +56,5 @@ layout: default
 
     </section> <!-- end s-home -->
    <section id="post">
-        {% if post.img %}
-        <a href="{{post.url | prepend: site.baseurl}}"><img class="post-image" src={{ "/images/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}"></a>
-     {% endif %}
 {{content}}
 </section>

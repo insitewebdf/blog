@@ -2,7 +2,7 @@
 layout: post
 title: "Site responsivo: Seu negócio está adaptado?"
 description: Você já entrou pelo celular em um site com as letras tão pequenas [...]
-img: contact-bg.jpg
+img: responsividade.jpg
 category: 'blog'
 twitter_text: 
 introduction: 
